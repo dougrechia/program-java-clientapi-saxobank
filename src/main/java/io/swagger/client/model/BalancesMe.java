@@ -28,7 +28,7 @@ import java.math.BigDecimal;
  * BalancesMe
  */
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2023-07-20T19:53:46.685908542Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2023-07-24T20:27:51.004902788Z[GMT]")
 
 public class BalancesMe {
   @SerializedName("CalculationReliability")

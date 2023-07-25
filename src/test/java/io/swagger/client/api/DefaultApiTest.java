@@ -16,6 +16,7 @@ import io.swagger.client.model.AccountsMe;
 import io.swagger.client.model.Balances;
 import io.swagger.client.model.BalancesMe;
 import java.math.BigDecimal;
+import io.swagger.client.model.ClientsMe;
 import io.swagger.client.model.InfoPrice;
 import io.swagger.client.model.InstrumentDetail;
 import io.swagger.client.model.Instruments;
@@ -115,6 +116,20 @@ public class DefaultApiTest {
     @Test
     public void openapiPortV1BalancesMeGetTest() throws Exception {
         BalancesMe response = api.openapiPortV1BalancesMeGet();
+
+        // TODO: test validations
+    }
+    /**
+     * 
+     *
+     * 
+     *
+     * @throws Exception
+     *          if the Api call fails
+     */
+    @Test
+    public void openapiPortV1ClientsMeGetTest() throws Exception {
+        ClientsMe response = api.openapiPortV1ClientsMeGet();
 
         // TODO: test validations
     }
@@ -253,7 +268,7 @@ public class DefaultApiTest {
     public void openapiTradeV2OrdersDeleteTest() throws Exception {
         String accountKey = null;
         String assetType = null;
-        String uic = null;
+        Long uic = null;
         OrdersCancel response = api.openapiTradeV2OrdersDelete(accountKey, assetType, uic);
 
         // TODO: test validations

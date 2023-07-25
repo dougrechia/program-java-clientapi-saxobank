@@ -27,7 +27,7 @@ import java.math.BigDecimal;
  * V2OrdersBody
  */
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2023-07-20T19:53:46.685908542Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2023-07-24T20:27:51.004902788Z[GMT]")
 
 public class V2OrdersBody {
   @SerializedName("OrderDuration")
@@ -53,6 +53,9 @@ public class V2OrdersBody {
 
   @SerializedName("OrderRelation")
   private String orderRelation = null;
+
+  @SerializedName("ExternalReference")
+  private String externalReference = null;
 
   @SerializedName("ManualOrder")
   private Boolean manualOrder = null;
@@ -207,6 +210,24 @@ public class V2OrdersBody {
     this.orderRelation = orderRelation;
   }
 
+  public V2OrdersBody externalReference(String externalReference) {
+    this.externalReference = externalReference;
+    return this;
+  }
+
+   /**
+   * Get externalReference
+   * @return externalReference
+  **/
+  @Schema(description = "")
+  public String getExternalReference() {
+    return externalReference;
+  }
+
+  public void setExternalReference(String externalReference) {
+    this.externalReference = externalReference;
+  }
+
   public V2OrdersBody manualOrder(Boolean manualOrder) {
     this.manualOrder = manualOrder;
     return this;
@@ -279,6 +300,7 @@ public class V2OrdersBody {
         Objects.equals(this.orderPrice, v2OrdersBody.orderPrice) &&
         Objects.equals(this.buySell, v2OrdersBody.buySell) &&
         Objects.equals(this.orderRelation, v2OrdersBody.orderRelation) &&
+        Objects.equals(this.externalReference, v2OrdersBody.externalReference) &&
         Objects.equals(this.manualOrder, v2OrdersBody.manualOrder) &&
         Objects.equals(this.accountKey, v2OrdersBody.accountKey) &&
         Objects.equals(this.uic, v2OrdersBody.uic);
@@ -286,7 +308,7 @@ public class V2OrdersBody {
 
   @Override
   public int hashCode() {
-    return Objects.hash(orderDuration, assetType, orderType, amount, amountType, orderPrice, buySell, orderRelation, manualOrder, accountKey, uic);
+    return Objects.hash(orderDuration, assetType, orderType, amount, amountType, orderPrice, buySell, orderRelation, externalReference, manualOrder, accountKey, uic);
   }
 
 
@@ -303,6 +325,7 @@ public class V2OrdersBody {
     sb.append("    orderPrice: ").append(toIndentedString(orderPrice)).append("\n");
     sb.append("    buySell: ").append(toIndentedString(buySell)).append("\n");
     sb.append("    orderRelation: ").append(toIndentedString(orderRelation)).append("\n");
+    sb.append("    externalReference: ").append(toIndentedString(externalReference)).append("\n");
     sb.append("    manualOrder: ").append(toIndentedString(manualOrder)).append("\n");
     sb.append("    accountKey: ").append(toIndentedString(accountKey)).append("\n");
     sb.append("    uic: ").append(toIndentedString(uic)).append("\n");

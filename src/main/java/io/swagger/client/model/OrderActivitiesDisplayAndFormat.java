@@ -25,23 +25,20 @@ import java.io.IOException;
  * OrderActivitiesDisplayAndFormat
  */
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2023-07-20T19:53:46.685908542Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2023-07-24T20:27:51.004902788Z[GMT]")
 
 public class OrderActivitiesDisplayAndFormat {
   @SerializedName("Currency")
   private String currency = null;
 
   @SerializedName("Decimals")
-  private Long decimals = null;
+  private Integer decimals = null;
 
   @SerializedName("Description")
   private String description = null;
 
-  @SerializedName("Format")
-  private String format = null;
-
   @SerializedName("OrderDecimals")
-  private Long orderDecimals = null;
+  private Integer orderDecimals = null;
 
   @SerializedName("Symbol")
   private String symbol = null;
@@ -64,7 +61,7 @@ public class OrderActivitiesDisplayAndFormat {
     this.currency = currency;
   }
 
-  public OrderActivitiesDisplayAndFormat decimals(Long decimals) {
+  public OrderActivitiesDisplayAndFormat decimals(Integer decimals) {
     this.decimals = decimals;
     return this;
   }
@@ -74,11 +71,11 @@ public class OrderActivitiesDisplayAndFormat {
    * @return decimals
   **/
   @Schema(description = "")
-  public Long getDecimals() {
+  public Integer getDecimals() {
     return decimals;
   }
 
-  public void setDecimals(Long decimals) {
+  public void setDecimals(Integer decimals) {
     this.decimals = decimals;
   }
 
@@ -100,25 +97,7 @@ public class OrderActivitiesDisplayAndFormat {
     this.description = description;
   }
 
-  public OrderActivitiesDisplayAndFormat format(String format) {
-    this.format = format;
-    return this;
-  }
-
-   /**
-   * Get format
-   * @return format
-  **/
-  @Schema(description = "")
-  public String getFormat() {
-    return format;
-  }
-
-  public void setFormat(String format) {
-    this.format = format;
-  }
-
-  public OrderActivitiesDisplayAndFormat orderDecimals(Long orderDecimals) {
+  public OrderActivitiesDisplayAndFormat orderDecimals(Integer orderDecimals) {
     this.orderDecimals = orderDecimals;
     return this;
   }
@@ -128,11 +107,11 @@ public class OrderActivitiesDisplayAndFormat {
    * @return orderDecimals
   **/
   @Schema(description = "")
-  public Long getOrderDecimals() {
+  public Integer getOrderDecimals() {
     return orderDecimals;
   }
 
-  public void setOrderDecimals(Long orderDecimals) {
+  public void setOrderDecimals(Integer orderDecimals) {
     this.orderDecimals = orderDecimals;
   }
 
@@ -167,14 +146,13 @@ public class OrderActivitiesDisplayAndFormat {
     return Objects.equals(this.currency, orderActivitiesDisplayAndFormat.currency) &&
         Objects.equals(this.decimals, orderActivitiesDisplayAndFormat.decimals) &&
         Objects.equals(this.description, orderActivitiesDisplayAndFormat.description) &&
-        Objects.equals(this.format, orderActivitiesDisplayAndFormat.format) &&
         Objects.equals(this.orderDecimals, orderActivitiesDisplayAndFormat.orderDecimals) &&
         Objects.equals(this.symbol, orderActivitiesDisplayAndFormat.symbol);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(currency, decimals, description, format, orderDecimals, symbol);
+    return Objects.hash(currency, decimals, description, orderDecimals, symbol);
   }
 
 
@@ -186,7 +164,6 @@ public class OrderActivitiesDisplayAndFormat {
     sb.append("    currency: ").append(toIndentedString(currency)).append("\n");
     sb.append("    decimals: ").append(toIndentedString(decimals)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    format: ").append(toIndentedString(format)).append("\n");
     sb.append("    orderDecimals: ").append(toIndentedString(orderDecimals)).append("\n");
     sb.append("    symbol: ").append(toIndentedString(symbol)).append("\n");
     sb.append("}");

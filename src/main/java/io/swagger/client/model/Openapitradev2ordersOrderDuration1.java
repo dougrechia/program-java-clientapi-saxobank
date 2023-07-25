@@ -25,7 +25,7 @@ import java.io.IOException;
  * The Order Duration. See https://www.developer.saxo/openapi/referencedocs/trade/v2/orders/changeorder/9304f171cf009b860f398733b4ae32ef/orderduration/e4b428c63c994fe617135f739171ede3
  */
 @Schema(description = "The Order Duration. See https://www.developer.saxo/openapi/referencedocs/trade/v2/orders/changeorder/9304f171cf009b860f398733b4ae32ef/orderduration/e4b428c63c994fe617135f739171ede3")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2023-07-20T19:53:46.685908542Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2023-07-24T20:27:51.004902788Z[GMT]")
 
 public class Openapitradev2ordersOrderDuration1 {
   @SerializedName("DurationType")

@@ -31,7 +31,7 @@ import java.util.List;
  * OrderQueryData
  */
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2023-07-20T19:53:46.685908542Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2023-07-24T20:27:51.004902788Z[GMT]")
 
 public class OrderQueryData {
   @SerializedName("AccountId")
@@ -99,6 +99,9 @@ public class OrderQueryData {
 
   @SerializedName("IpoSubscriptionFee")
   private BigDecimal ipoSubscriptionFee = null;
+
+  @SerializedName("ExternalReference")
+  private String externalReference = null;
 
   @SerializedName("IsExtendedHoursEnabled")
   private Boolean isExtendedHoursEnabled = null;
@@ -547,6 +550,24 @@ public class OrderQueryData {
     this.ipoSubscriptionFee = ipoSubscriptionFee;
   }
 
+  public OrderQueryData externalReference(String externalReference) {
+    this.externalReference = externalReference;
+    return this;
+  }
+
+   /**
+   * Get externalReference
+   * @return externalReference
+  **/
+  @Schema(description = "")
+  public String getExternalReference() {
+    return externalReference;
+  }
+
+  public void setExternalReference(String externalReference) {
+    this.externalReference = externalReference;
+  }
+
   public OrderQueryData isExtendedHoursEnabled(Boolean isExtendedHoursEnabled) {
     this.isExtendedHoursEnabled = isExtendedHoursEnabled;
     return this;
@@ -893,6 +914,7 @@ public class OrderQueryData {
         Objects.equals(this.duration, orderQueryData.duration) &&
         Objects.equals(this.exchange, orderQueryData.exchange) &&
         Objects.equals(this.ipoSubscriptionFee, orderQueryData.ipoSubscriptionFee) &&
+        Objects.equals(this.externalReference, orderQueryData.externalReference) &&
         Objects.equals(this.isExtendedHoursEnabled, orderQueryData.isExtendedHoursEnabled) &&
         Objects.equals(this.isForceOpen, orderQueryData.isForceOpen) &&
         Objects.equals(this.isMarketOpen, orderQueryData.isMarketOpen) &&
@@ -914,7 +936,7 @@ public class OrderQueryData {
 
   @Override
   public int hashCode() {
-    return Objects.hash(accountId, accountKey, adviceNote, amount, ask, assetType, bid, buySell, calculationReliability, clientId, clientKey, clientName, clientNote, correlationKey, currentPrice, currentPriceDelayMinutes, currentPriceType, displayAndFormat, distanceToMarket, duration, exchange, ipoSubscriptionFee, isExtendedHoursEnabled, isForceOpen, isMarketOpen, marketPrice, marketState, marketValue, nonTradableReason, openOrderType, orderAmountType, orderId, orderRelation, orderTime, price, relatedOpenOrders, status, tradingStatus, uic);
+    return Objects.hash(accountId, accountKey, adviceNote, amount, ask, assetType, bid, buySell, calculationReliability, clientId, clientKey, clientName, clientNote, correlationKey, currentPrice, currentPriceDelayMinutes, currentPriceType, displayAndFormat, distanceToMarket, duration, exchange, ipoSubscriptionFee, externalReference, isExtendedHoursEnabled, isForceOpen, isMarketOpen, marketPrice, marketState, marketValue, nonTradableReason, openOrderType, orderAmountType, orderId, orderRelation, orderTime, price, relatedOpenOrders, status, tradingStatus, uic);
   }
 
 
@@ -945,6 +967,7 @@ public class OrderQueryData {
     sb.append("    duration: ").append(toIndentedString(duration)).append("\n");
     sb.append("    exchange: ").append(toIndentedString(exchange)).append("\n");
     sb.append("    ipoSubscriptionFee: ").append(toIndentedString(ipoSubscriptionFee)).append("\n");
+    sb.append("    externalReference: ").append(toIndentedString(externalReference)).append("\n");
     sb.append("    isExtendedHoursEnabled: ").append(toIndentedString(isExtendedHoursEnabled)).append("\n");
     sb.append("    isForceOpen: ").append(toIndentedString(isForceOpen)).append("\n");
     sb.append("    isMarketOpen: ").append(toIndentedString(isMarketOpen)).append("\n");

@@ -2,7 +2,7 @@
 
 Saxobank trading API
 - API version: 0.1-oas3
-  - Build date: 2023-07-20T19:53:46.685908542Z[GMT]
+  - Build date: 2023-07-24T20:27:51.004902788Z[GMT]
 
 Saxobank trading API
 
@@ -106,6 +106,7 @@ Class | Method | HTTP request | Description
 *DefaultApi* | [**openapiPortV1AccountsMeGet**](docs/DefaultApi.md#openapiPortV1AccountsMeGet) | **GET** /openapi/port/v1/accounts/me | 
 *DefaultApi* | [**openapiPortV1BalancesGet**](docs/DefaultApi.md#openapiPortV1BalancesGet) | **GET** /openapi/port/v1/balances | 
 *DefaultApi* | [**openapiPortV1BalancesMeGet**](docs/DefaultApi.md#openapiPortV1BalancesMeGet) | **GET** /openapi/port/v1/balances/me | 
+*DefaultApi* | [**openapiPortV1ClientsMeGet**](docs/DefaultApi.md#openapiPortV1ClientsMeGet) | **GET** /openapi/port/v1/clients/me | 
 *DefaultApi* | [**openapiPortV1OrdersMeGet**](docs/DefaultApi.md#openapiPortV1OrdersMeGet) | **GET** /openapi/port/v1/orders/me | 
 *DefaultApi* | [**openapiPortV1PositionsGet**](docs/DefaultApi.md#openapiPortV1PositionsGet) | **GET** /openapi/port/v1/positions | 
 *DefaultApi* | [**openapiPortV1UsersMeGet**](docs/DefaultApi.md#openapiPortV1UsersMeGet) | **GET** /openapi/port/v1/users/me | 
@@ -127,6 +128,7 @@ Class | Method | HTTP request | Description
  - [BalancesCollateralCreditValue](docs/BalancesCollateralCreditValue.md)
  - [BalancesInitialMargin](docs/BalancesInitialMargin.md)
  - [BalancesMe](docs/BalancesMe.md)
+ - [ClientsMe](docs/ClientsMe.md)
  - [InfoPrice](docs/InfoPrice.md)
  - [InfoPriceQuote](docs/InfoPriceQuote.md)
  - [InstrumentDetail](docs/InstrumentDetail.md)
@@ -147,6 +149,7 @@ Class | Method | HTTP request | Description
  - [OrderActivities](docs/OrderActivities.md)
  - [OrderActivitiesData](docs/OrderActivitiesData.md)
  - [OrderActivitiesDisplayAndFormat](docs/OrderActivitiesDisplayAndFormat.md)
+ - [OrderActivitiesSleepingOrderCondition](docs/OrderActivitiesSleepingOrderCondition.md)
  - [OrderCancel](docs/OrderCancel.md)
  - [OrderCancelOrders](docs/OrderCancelOrders.md)
  - [OrderPatchResponse](docs/OrderPatchResponse.md)
