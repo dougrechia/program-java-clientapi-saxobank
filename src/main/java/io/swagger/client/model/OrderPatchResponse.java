@@ -25,7 +25,7 @@ import java.io.IOException;
  * OrderPatchResponse
  */
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2023-07-24T20:27:51.004902788Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2023-07-27T21:00:40.494761882Z[GMT]")
 
 public class OrderPatchResponse {
   @SerializedName("OrderId")

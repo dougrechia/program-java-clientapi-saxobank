@@ -23,7 +23,7 @@ Method | HTTP request | Description
 
 <a name="openapiCsV1AuditOrderactivitiesGet"></a>
 # **openapiCsV1AuditOrderactivitiesGet**
-> OrderActivities openapiCsV1AuditOrderactivitiesGet(skiptoken, top, accountKey, clientKey, correlationKey, entryType, fieldGroups, fromDateTime, includeSubAccounts, orderId, status, toDateTime)
+> OrderActivities openapiCsV1AuditOrderactivitiesGet($skiptoken, $top, accountKey, clientKey, correlationKey, entryType, fieldGroups, fromDateTime, includeSubAccounts, orderId, status, toDateTime)
 
 
 
@@ -42,8 +42,8 @@ ApiClient defaultClient = Configuration.getDefaultApiClient();
 
 
 DefaultApi apiInstance = new DefaultApi();
-String skiptoken = "skiptoken_example"; // String | Id token of entity to start taking elements from.
-Long top = 789L; // Long | Optional number of elements to retrieve.
+String $skiptoken = "$skiptoken_example"; // String | Id token of entity to start taking elements from.
+Long $top = 789L; // Long | Optional number of elements to retrieve.
 String accountKey = "accountKey_example"; // String | If specified will only return entries pertaining to specified Account.
 String clientKey = "clientKey_example"; // String | If specified will only return entries pertaining to specified client and its sub clients depending upon includeSubAccounts.
 String correlationKey = "correlationKey_example"; // String | If specified, will only return entries with the specified CorrelationKey
@@ -55,7 +55,7 @@ String orderId = "orderId_example"; // String | Will only return entries pertain
 String status = "status_example"; // String | If specified will only return entries with the specified OrderStatus. See https://www.developer.saxo/openapi/referencedocs/cs/v1/audit-orderactivities/getorderstatesasync/88396c9accc21e373925b5cd2ce134dd/orderlogstatus/37923e81ea74e6f13b5b8fce7abac894
 String toDateTime = "toDateTime_example"; // String | (UTC) Only include entries, with a ActivityDateTime less than or equal to ToDateTime. Cannot be used with EntryType=\"Last\"
 try {
-    OrderActivities result = apiInstance.openapiCsV1AuditOrderactivitiesGet(skiptoken, top, accountKey, clientKey, correlationKey, entryType, fieldGroups, fromDateTime, includeSubAccounts, orderId, status, toDateTime);
+    OrderActivities result = apiInstance.openapiCsV1AuditOrderactivitiesGet($skiptoken, $top, accountKey, clientKey, correlationKey, entryType, fieldGroups, fromDateTime, includeSubAccounts, orderId, status, toDateTime);
     System.out.println(result);
 } catch (ApiException e) {
     System.err.println("Exception when calling DefaultApi#openapiCsV1AuditOrderactivitiesGet");
@@ -67,8 +67,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **skiptoken** | **String**| Id token of entity to start taking elements from. | [optional]
- **top** | **Long**| Optional number of elements to retrieve. | [optional]
+ **$skiptoken** | **String**| Id token of entity to start taking elements from. | [optional]
+ **$top** | **Long**| Optional number of elements to retrieve. | [optional]
  **accountKey** | **String**| If specified will only return entries pertaining to specified Account. | [optional]
  **clientKey** | **String**| If specified will only return entries pertaining to specified client and its sub clients depending upon includeSubAccounts. | [optional]
  **correlationKey** | **String**| If specified, will only return entries with the specified CorrelationKey | [optional]

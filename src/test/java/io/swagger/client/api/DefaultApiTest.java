@@ -59,8 +59,8 @@ public class DefaultApiTest {
      */
     @Test
     public void openapiCsV1AuditOrderactivitiesGetTest() throws Exception {
-        String skiptoken = null;
-        Long top = null;
+        String $skiptoken = null;
+        Long $top = null;
         String accountKey = null;
         String clientKey = null;
         String correlationKey = null;
@@ -71,7 +71,7 @@ public class DefaultApiTest {
         String orderId = null;
         String status = null;
         String toDateTime = null;
-        OrderActivities response = api.openapiCsV1AuditOrderactivitiesGet(skiptoken, top, accountKey, clientKey, correlationKey, entryType, fieldGroups, fromDateTime, includeSubAccounts, orderId, status, toDateTime);
+        OrderActivities response = api.openapiCsV1AuditOrderactivitiesGet($skiptoken, $top, accountKey, clientKey, correlationKey, entryType, fieldGroups, fromDateTime, includeSubAccounts, orderId, status, toDateTime);
 
         // TODO: test validations
     }

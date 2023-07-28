@@ -73,8 +73,8 @@ public class DefaultApi {
 
     /**
      * Build call for openapiCsV1AuditOrderactivitiesGet
-     * @param skiptoken Id token of entity to start taking elements from. (optional)
-     * @param top Optional number of elements to retrieve. (optional)
+     * @param $skiptoken Id token of entity to start taking elements from. (optional)
+     * @param $top Optional number of elements to retrieve. (optional)
      * @param accountKey If specified will only return entries pertaining to specified Account. (optional)
      * @param clientKey If specified will only return entries pertaining to specified client and its sub clients depending upon includeSubAccounts. (optional)
      * @param correlationKey If specified, will only return entries with the specified CorrelationKey (optional)
@@ -90,7 +90,7 @@ public class DefaultApi {
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call openapiCsV1AuditOrderactivitiesGetCall(String skiptoken, Long top, String accountKey, String clientKey, String correlationKey, String entryType, String fieldGroups, String fromDateTime, Boolean includeSubAccounts, String orderId, String status, String toDateTime, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    public com.squareup.okhttp.Call openapiCsV1AuditOrderactivitiesGetCall(String $skiptoken, Long $top, String accountKey, String clientKey, String correlationKey, String entryType, String fieldGroups, String fromDateTime, Boolean includeSubAccounts, String orderId, String status, String toDateTime, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
         
         // create path and map variables
@@ -98,10 +98,10 @@ public class DefaultApi {
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        if (skiptoken != null)
-        localVarQueryParams.addAll(apiClient.parameterToPair("skiptoken", skiptoken));
-        if (top != null)
-        localVarQueryParams.addAll(apiClient.parameterToPair("top", top));
+        if ($skiptoken != null)
+        localVarQueryParams.addAll(apiClient.parameterToPair("$skiptoken", $skiptoken));
+        if ($top != null)
+        localVarQueryParams.addAll(apiClient.parameterToPair("$top", $top));
         if (accountKey != null)
         localVarQueryParams.addAll(apiClient.parameterToPair("AccountKey", accountKey));
         if (clientKey != null)
@@ -156,9 +156,9 @@ public class DefaultApi {
     }
     
     @SuppressWarnings("rawtypes")
-    private com.squareup.okhttp.Call openapiCsV1AuditOrderactivitiesGetValidateBeforeCall(String skiptoken, Long top, String accountKey, String clientKey, String correlationKey, String entryType, String fieldGroups, String fromDateTime, Boolean includeSubAccounts, String orderId, String status, String toDateTime, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    private com.squareup.okhttp.Call openapiCsV1AuditOrderactivitiesGetValidateBeforeCall(String $skiptoken, Long $top, String accountKey, String clientKey, String correlationKey, String entryType, String fieldGroups, String fromDateTime, Boolean includeSubAccounts, String orderId, String status, String toDateTime, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         
-        com.squareup.okhttp.Call call = openapiCsV1AuditOrderactivitiesGetCall(skiptoken, top, accountKey, clientKey, correlationKey, entryType, fieldGroups, fromDateTime, includeSubAccounts, orderId, status, toDateTime, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = openapiCsV1AuditOrderactivitiesGetCall($skiptoken, $top, accountKey, clientKey, correlationKey, entryType, fieldGroups, fromDateTime, includeSubAccounts, orderId, status, toDateTime, progressListener, progressRequestListener);
         return call;
 
         
@@ -170,8 +170,8 @@ public class DefaultApi {
     /**
      * 
      * Query Order activities history
-     * @param skiptoken Id token of entity to start taking elements from. (optional)
-     * @param top Optional number of elements to retrieve. (optional)
+     * @param $skiptoken Id token of entity to start taking elements from. (optional)
+     * @param $top Optional number of elements to retrieve. (optional)
      * @param accountKey If specified will only return entries pertaining to specified Account. (optional)
      * @param clientKey If specified will only return entries pertaining to specified client and its sub clients depending upon includeSubAccounts. (optional)
      * @param correlationKey If specified, will only return entries with the specified CorrelationKey (optional)
@@ -185,16 +185,16 @@ public class DefaultApi {
      * @return OrderActivities
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public OrderActivities openapiCsV1AuditOrderactivitiesGet(String skiptoken, Long top, String accountKey, String clientKey, String correlationKey, String entryType, String fieldGroups, String fromDateTime, Boolean includeSubAccounts, String orderId, String status, String toDateTime) throws ApiException {
-        ApiResponse<OrderActivities> resp = openapiCsV1AuditOrderactivitiesGetWithHttpInfo(skiptoken, top, accountKey, clientKey, correlationKey, entryType, fieldGroups, fromDateTime, includeSubAccounts, orderId, status, toDateTime);
+    public OrderActivities openapiCsV1AuditOrderactivitiesGet(String $skiptoken, Long $top, String accountKey, String clientKey, String correlationKey, String entryType, String fieldGroups, String fromDateTime, Boolean includeSubAccounts, String orderId, String status, String toDateTime) throws ApiException {
+        ApiResponse<OrderActivities> resp = openapiCsV1AuditOrderactivitiesGetWithHttpInfo($skiptoken, $top, accountKey, clientKey, correlationKey, entryType, fieldGroups, fromDateTime, includeSubAccounts, orderId, status, toDateTime);
         return resp.getData();
     }
 
     /**
      * 
      * Query Order activities history
-     * @param skiptoken Id token of entity to start taking elements from. (optional)
-     * @param top Optional number of elements to retrieve. (optional)
+     * @param $skiptoken Id token of entity to start taking elements from. (optional)
+     * @param $top Optional number of elements to retrieve. (optional)
      * @param accountKey If specified will only return entries pertaining to specified Account. (optional)
      * @param clientKey If specified will only return entries pertaining to specified client and its sub clients depending upon includeSubAccounts. (optional)
      * @param correlationKey If specified, will only return entries with the specified CorrelationKey (optional)
@@ -208,8 +208,8 @@ public class DefaultApi {
      * @return ApiResponse&lt;OrderActivities&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public ApiResponse<OrderActivities> openapiCsV1AuditOrderactivitiesGetWithHttpInfo(String skiptoken, Long top, String accountKey, String clientKey, String correlationKey, String entryType, String fieldGroups, String fromDateTime, Boolean includeSubAccounts, String orderId, String status, String toDateTime) throws ApiException {
-        com.squareup.okhttp.Call call = openapiCsV1AuditOrderactivitiesGetValidateBeforeCall(skiptoken, top, accountKey, clientKey, correlationKey, entryType, fieldGroups, fromDateTime, includeSubAccounts, orderId, status, toDateTime, null, null);
+    public ApiResponse<OrderActivities> openapiCsV1AuditOrderactivitiesGetWithHttpInfo(String $skiptoken, Long $top, String accountKey, String clientKey, String correlationKey, String entryType, String fieldGroups, String fromDateTime, Boolean includeSubAccounts, String orderId, String status, String toDateTime) throws ApiException {
+        com.squareup.okhttp.Call call = openapiCsV1AuditOrderactivitiesGetValidateBeforeCall($skiptoken, $top, accountKey, clientKey, correlationKey, entryType, fieldGroups, fromDateTime, includeSubAccounts, orderId, status, toDateTime, null, null);
         Type localVarReturnType = new TypeToken<OrderActivities>(){}.getType();
         return apiClient.execute(call, localVarReturnType);
     }
@@ -217,8 +217,8 @@ public class DefaultApi {
     /**
      *  (asynchronously)
      * Query Order activities history
-     * @param skiptoken Id token of entity to start taking elements from. (optional)
-     * @param top Optional number of elements to retrieve. (optional)
+     * @param $skiptoken Id token of entity to start taking elements from. (optional)
+     * @param $top Optional number of elements to retrieve. (optional)
      * @param accountKey If specified will only return entries pertaining to specified Account. (optional)
      * @param clientKey If specified will only return entries pertaining to specified client and its sub clients depending upon includeSubAccounts. (optional)
      * @param correlationKey If specified, will only return entries with the specified CorrelationKey (optional)
@@ -233,7 +233,7 @@ public class DefaultApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      */
-    public com.squareup.okhttp.Call openapiCsV1AuditOrderactivitiesGetAsync(String skiptoken, Long top, String accountKey, String clientKey, String correlationKey, String entryType, String fieldGroups, String fromDateTime, Boolean includeSubAccounts, String orderId, String status, String toDateTime, final ApiCallback<OrderActivities> callback) throws ApiException {
+    public com.squareup.okhttp.Call openapiCsV1AuditOrderactivitiesGetAsync(String $skiptoken, Long $top, String accountKey, String clientKey, String correlationKey, String entryType, String fieldGroups, String fromDateTime, Boolean includeSubAccounts, String orderId, String status, String toDateTime, final ApiCallback<OrderActivities> callback) throws ApiException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -254,7 +254,7 @@ public class DefaultApi {
             };
         }
 
-        com.squareup.okhttp.Call call = openapiCsV1AuditOrderactivitiesGetValidateBeforeCall(skiptoken, top, accountKey, clientKey, correlationKey, entryType, fieldGroups, fromDateTime, includeSubAccounts, orderId, status, toDateTime, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = openapiCsV1AuditOrderactivitiesGetValidateBeforeCall($skiptoken, $top, accountKey, clientKey, correlationKey, entryType, fieldGroups, fromDateTime, includeSubAccounts, orderId, status, toDateTime, progressListener, progressRequestListener);
         Type localVarReturnType = new TypeToken<OrderActivities>(){}.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;

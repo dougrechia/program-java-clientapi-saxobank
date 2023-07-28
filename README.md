@@ -2,7 +2,7 @@
 
 Saxobank trading API
 - API version: 0.1-oas3
-  - Build date: 2023-07-24T20:27:51.004902788Z[GMT]
+  - Build date: 2023-07-27T21:00:40.494761882Z[GMT]
 
 Saxobank trading API
 
