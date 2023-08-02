@@ -20,14 +20,17 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.swagger.client.model.Openapitradev2ordersOrderDuration;
+import io.swagger.client.model.Openapitradev2ordersOrders;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 /**
  * V2OrdersBody
  */
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2023-07-27T21:00:40.494761882Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2023-08-01T18:24:56.181779897Z[GMT]")
 
 public class V2OrdersBody {
   @SerializedName("OrderDuration")
@@ -65,6 +68,9 @@ public class V2OrdersBody {
 
   @SerializedName("Uic")
   private Long uic = null;
+
+  @SerializedName("Orders")
+  private List<Openapitradev2ordersOrders> orders = null;
 
   public V2OrdersBody orderDuration(Openapitradev2ordersOrderDuration orderDuration) {
     this.orderDuration = orderDuration;
@@ -282,6 +288,32 @@ public class V2OrdersBody {
     this.uic = uic;
   }
 
+  public V2OrdersBody orders(List<Openapitradev2ordersOrders> orders) {
+    this.orders = orders;
+    return this;
+  }
+
+  public V2OrdersBody addOrdersItem(Openapitradev2ordersOrders ordersItem) {
+    if (this.orders == null) {
+      this.orders = new ArrayList<Openapitradev2ordersOrders>();
+    }
+    this.orders.add(ordersItem);
+    return this;
+  }
+
+   /**
+   * Get orders
+   * @return orders
+  **/
+  @Schema(description = "")
+  public List<Openapitradev2ordersOrders> getOrders() {
+    return orders;
+  }
+
+  public void setOrders(List<Openapitradev2ordersOrders> orders) {
+    this.orders = orders;
+  }
+
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -303,12 +335,13 @@ public class V2OrdersBody {
         Objects.equals(this.externalReference, v2OrdersBody.externalReference) &&
         Objects.equals(this.manualOrder, v2OrdersBody.manualOrder) &&
         Objects.equals(this.accountKey, v2OrdersBody.accountKey) &&
-        Objects.equals(this.uic, v2OrdersBody.uic);
+        Objects.equals(this.uic, v2OrdersBody.uic) &&
+        Objects.equals(this.orders, v2OrdersBody.orders);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(orderDuration, assetType, orderType, amount, amountType, orderPrice, buySell, orderRelation, externalReference, manualOrder, accountKey, uic);
+    return Objects.hash(orderDuration, assetType, orderType, amount, amountType, orderPrice, buySell, orderRelation, externalReference, manualOrder, accountKey, uic, orders);
   }
 
 
@@ -329,6 +362,7 @@ public class V2OrdersBody {
     sb.append("    manualOrder: ").append(toIndentedString(manualOrder)).append("\n");
     sb.append("    accountKey: ").append(toIndentedString(accountKey)).append("\n");
     sb.append("    uic: ").append(toIndentedString(uic)).append("\n");
+    sb.append("    orders: ").append(toIndentedString(orders)).append("\n");
     sb.append("}");
     return sb.toString();
   }

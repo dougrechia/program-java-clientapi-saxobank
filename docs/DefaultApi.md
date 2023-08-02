@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**openapiPortV1BalancesGet**](DefaultApi.md#openapiPortV1BalancesGet) | **GET** /openapi/port/v1/balances | 
 [**openapiPortV1BalancesMeGet**](DefaultApi.md#openapiPortV1BalancesMeGet) | **GET** /openapi/port/v1/balances/me | 
 [**openapiPortV1ClientsMeGet**](DefaultApi.md#openapiPortV1ClientsMeGet) | **GET** /openapi/port/v1/clients/me | 
+[**openapiPortV1NetpositionsMeGet**](DefaultApi.md#openapiPortV1NetpositionsMeGet) | **GET** /openapi/port/v1/netpositions/me | 
 [**openapiPortV1OrdersMeGet**](DefaultApi.md#openapiPortV1OrdersMeGet) | **GET** /openapi/port/v1/orders/me | 
 [**openapiPortV1PositionsGet**](DefaultApi.md#openapiPortV1PositionsGet) | **GET** /openapi/port/v1/positions | 
 [**openapiPortV1UsersMeGet**](DefaultApi.md#openapiPortV1UsersMeGet) | **GET** /openapi/port/v1/users/me | 
@@ -274,6 +275,62 @@ This endpoint does not need any parameter.
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
+
+<a name="openapiPortV1NetpositionsMeGet"></a>
+# **openapiPortV1NetpositionsMeGet**
+> NetPositionsMe openapiPortV1NetpositionsMeGet($skip, $top, fieldGroups, priceMode)
+
+
+
+Get positions for the logged-in client
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiClient;
+//import io.swagger.client.ApiException;
+//import io.swagger.client.Configuration;
+//import io.swagger.client.auth.*;
+//import io.swagger.client.api.DefaultApi;
+
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+
+DefaultApi apiInstance = new DefaultApi();
+Integer $skip = 56; // Integer | Optional number of elements to skip.
+Integer $top = 56; // Integer | Optional number of elements to retrieve.
+String fieldGroups = "fieldGroups_example"; // String | Optional. Specifies which data to return. Default is [PositionBase, PositionView]
+String priceMode = "priceMode_example"; // String | Optional. Specifies the prices to be used when returning price dependent values. Default is “RegularTradingHours”.
+try {
+    NetPositionsMe result = apiInstance.openapiPortV1NetpositionsMeGet($skip, $top, fieldGroups, priceMode);
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#openapiPortV1NetpositionsMeGet");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **$skip** | **Integer**| Optional number of elements to skip. | [optional]
+ **$top** | **Integer**| Optional number of elements to retrieve. | [optional]
+ **fieldGroups** | **String**| Optional. Specifies which data to return. Default is [PositionBase, PositionView] | [optional]
+ **priceMode** | **String**| Optional. Specifies the prices to be used when returning price dependent values. Default is “RegularTradingHours”. | [optional]
+
+### Return type
+
+[**NetPositionsMe**](NetPositionsMe.md)
+
+### Authorization
+
+[bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json; charset=utf-8
 
 <a name="openapiPortV1OrdersMeGet"></a>
 # **openapiPortV1OrdersMeGet**

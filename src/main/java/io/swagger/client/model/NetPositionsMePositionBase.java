@@ -22,17 +22,18 @@ import com.google.gson.stream.JsonWriter;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
 import java.math.BigDecimal;
-import org.threeten.bp.LocalDate;
-import org.threeten.bp.OffsetDateTime;
 /**
- * PositionsPositionBase
+ * NetPositionsMePositionBase
  */
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2023-08-01T18:24:56.181779897Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2023-08-01T17:11:38.297188217Z[GMT]")
 
-public class PositionsPositionBase {
+public class NetPositionsMePositionBase {
   @SerializedName("AccountId")
   private String accountId = null;
+
+  @SerializedName("AccountKey")
+  private String accountKey = null;
 
   @SerializedName("Amount")
   private BigDecimal amount = null;
@@ -49,8 +50,11 @@ public class PositionsPositionBase {
   @SerializedName("CloseConversionRateSettled")
   private Boolean closeConversionRateSettled = null;
 
+  @SerializedName("CorrelationKey")
+  private String correlationKey = null;
+
   @SerializedName("ExecutionTimeOpen")
-  private OffsetDateTime executionTimeOpen = null;
+  private String executionTimeOpen = null;
 
   @SerializedName("IsForceOpen")
   private Boolean isForceOpen = null;
@@ -64,8 +68,11 @@ public class PositionsPositionBase {
   @SerializedName("OpenPrice")
   private BigDecimal openPrice = null;
 
-  @SerializedName("SpotDate")
-  private LocalDate spotDate = null;
+  @SerializedName("OpenPriceIncludingCosts")
+  private BigDecimal openPriceIncludingCosts = null;
+
+  @SerializedName("SourceOrderId")
+  private String sourceOrderId = null;
 
   @SerializedName("Status")
   private String status = null;
@@ -74,9 +81,9 @@ public class PositionsPositionBase {
   private Long uic = null;
 
   @SerializedName("ValueDate")
-  private OffsetDateTime valueDate = null;
+  private String valueDate = null;
 
-  public PositionsPositionBase accountId(String accountId) {
+  public NetPositionsMePositionBase accountId(String accountId) {
     this.accountId = accountId;
     return this;
   }
@@ -94,7 +101,25 @@ public class PositionsPositionBase {
     this.accountId = accountId;
   }
 
-  public PositionsPositionBase amount(BigDecimal amount) {
+  public NetPositionsMePositionBase accountKey(String accountKey) {
+    this.accountKey = accountKey;
+    return this;
+  }
+
+   /**
+   * Get accountKey
+   * @return accountKey
+  **/
+  @Schema(description = "")
+  public String getAccountKey() {
+    return accountKey;
+  }
+
+  public void setAccountKey(String accountKey) {
+    this.accountKey = accountKey;
+  }
+
+  public NetPositionsMePositionBase amount(BigDecimal amount) {
     this.amount = amount;
     return this;
   }
@@ -112,7 +137,7 @@ public class PositionsPositionBase {
     this.amount = amount;
   }
 
-  public PositionsPositionBase assetType(String assetType) {
+  public NetPositionsMePositionBase assetType(String assetType) {
     this.assetType = assetType;
     return this;
   }
@@ -130,7 +155,7 @@ public class PositionsPositionBase {
     this.assetType = assetType;
   }
 
-  public PositionsPositionBase canBeClosed(Boolean canBeClosed) {
+  public NetPositionsMePositionBase canBeClosed(Boolean canBeClosed) {
     this.canBeClosed = canBeClosed;
     return this;
   }
@@ -148,7 +173,7 @@ public class PositionsPositionBase {
     this.canBeClosed = canBeClosed;
   }
 
-  public PositionsPositionBase clientId(String clientId) {
+  public NetPositionsMePositionBase clientId(String clientId) {
     this.clientId = clientId;
     return this;
   }
@@ -166,7 +191,7 @@ public class PositionsPositionBase {
     this.clientId = clientId;
   }
 
-  public PositionsPositionBase closeConversionRateSettled(Boolean closeConversionRateSettled) {
+  public NetPositionsMePositionBase closeConversionRateSettled(Boolean closeConversionRateSettled) {
     this.closeConversionRateSettled = closeConversionRateSettled;
     return this;
   }
@@ -184,7 +209,25 @@ public class PositionsPositionBase {
     this.closeConversionRateSettled = closeConversionRateSettled;
   }
 
-  public PositionsPositionBase executionTimeOpen(OffsetDateTime executionTimeOpen) {
+  public NetPositionsMePositionBase correlationKey(String correlationKey) {
+    this.correlationKey = correlationKey;
+    return this;
+  }
+
+   /**
+   * Get correlationKey
+   * @return correlationKey
+  **/
+  @Schema(description = "")
+  public String getCorrelationKey() {
+    return correlationKey;
+  }
+
+  public void setCorrelationKey(String correlationKey) {
+    this.correlationKey = correlationKey;
+  }
+
+  public NetPositionsMePositionBase executionTimeOpen(String executionTimeOpen) {
     this.executionTimeOpen = executionTimeOpen;
     return this;
   }
@@ -194,15 +237,15 @@ public class PositionsPositionBase {
    * @return executionTimeOpen
   **/
   @Schema(description = "")
-  public OffsetDateTime getExecutionTimeOpen() {
+  public String getExecutionTimeOpen() {
     return executionTimeOpen;
   }
 
-  public void setExecutionTimeOpen(OffsetDateTime executionTimeOpen) {
+  public void setExecutionTimeOpen(String executionTimeOpen) {
     this.executionTimeOpen = executionTimeOpen;
   }
 
-  public PositionsPositionBase isForceOpen(Boolean isForceOpen) {
+  public NetPositionsMePositionBase isForceOpen(Boolean isForceOpen) {
     this.isForceOpen = isForceOpen;
     return this;
   }
@@ -220,7 +263,7 @@ public class PositionsPositionBase {
     this.isForceOpen = isForceOpen;
   }
 
-  public PositionsPositionBase isMarketOpen(Boolean isMarketOpen) {
+  public NetPositionsMePositionBase isMarketOpen(Boolean isMarketOpen) {
     this.isMarketOpen = isMarketOpen;
     return this;
   }
@@ -238,7 +281,7 @@ public class PositionsPositionBase {
     this.isMarketOpen = isMarketOpen;
   }
 
-  public PositionsPositionBase lockedByBackOffice(Boolean lockedByBackOffice) {
+  public NetPositionsMePositionBase lockedByBackOffice(Boolean lockedByBackOffice) {
     this.lockedByBackOffice = lockedByBackOffice;
     return this;
   }
@@ -256,7 +299,7 @@ public class PositionsPositionBase {
     this.lockedByBackOffice = lockedByBackOffice;
   }
 
-  public PositionsPositionBase openPrice(BigDecimal openPrice) {
+  public NetPositionsMePositionBase openPrice(BigDecimal openPrice) {
     this.openPrice = openPrice;
     return this;
   }
@@ -274,25 +317,43 @@ public class PositionsPositionBase {
     this.openPrice = openPrice;
   }
 
-  public PositionsPositionBase spotDate(LocalDate spotDate) {
-    this.spotDate = spotDate;
+  public NetPositionsMePositionBase openPriceIncludingCosts(BigDecimal openPriceIncludingCosts) {
+    this.openPriceIncludingCosts = openPriceIncludingCosts;
     return this;
   }
 
    /**
-   * Get spotDate
-   * @return spotDate
+   * Get openPriceIncludingCosts
+   * @return openPriceIncludingCosts
   **/
   @Schema(description = "")
-  public LocalDate getSpotDate() {
-    return spotDate;
+  public BigDecimal getOpenPriceIncludingCosts() {
+    return openPriceIncludingCosts;
   }
 
-  public void setSpotDate(LocalDate spotDate) {
-    this.spotDate = spotDate;
+  public void setOpenPriceIncludingCosts(BigDecimal openPriceIncludingCosts) {
+    this.openPriceIncludingCosts = openPriceIncludingCosts;
   }
 
-  public PositionsPositionBase status(String status) {
+  public NetPositionsMePositionBase sourceOrderId(String sourceOrderId) {
+    this.sourceOrderId = sourceOrderId;
+    return this;
+  }
+
+   /**
+   * Get sourceOrderId
+   * @return sourceOrderId
+  **/
+  @Schema(description = "")
+  public String getSourceOrderId() {
+    return sourceOrderId;
+  }
+
+  public void setSourceOrderId(String sourceOrderId) {
+    this.sourceOrderId = sourceOrderId;
+  }
+
+  public NetPositionsMePositionBase status(String status) {
     this.status = status;
     return this;
   }
@@ -310,7 +371,7 @@ public class PositionsPositionBase {
     this.status = status;
   }
 
-  public PositionsPositionBase uic(Long uic) {
+  public NetPositionsMePositionBase uic(Long uic) {
     this.uic = uic;
     return this;
   }
@@ -328,7 +389,7 @@ public class PositionsPositionBase {
     this.uic = uic;
   }
 
-  public PositionsPositionBase valueDate(OffsetDateTime valueDate) {
+  public NetPositionsMePositionBase valueDate(String valueDate) {
     this.valueDate = valueDate;
     return this;
   }
@@ -338,11 +399,11 @@ public class PositionsPositionBase {
    * @return valueDate
   **/
   @Schema(description = "")
-  public OffsetDateTime getValueDate() {
+  public String getValueDate() {
     return valueDate;
   }
 
-  public void setValueDate(OffsetDateTime valueDate) {
+  public void setValueDate(String valueDate) {
     this.valueDate = valueDate;
   }
 
@@ -355,47 +416,53 @@ public class PositionsPositionBase {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    PositionsPositionBase positionsPositionBase = (PositionsPositionBase) o;
-    return Objects.equals(this.accountId, positionsPositionBase.accountId) &&
-        Objects.equals(this.amount, positionsPositionBase.amount) &&
-        Objects.equals(this.assetType, positionsPositionBase.assetType) &&
-        Objects.equals(this.canBeClosed, positionsPositionBase.canBeClosed) &&
-        Objects.equals(this.clientId, positionsPositionBase.clientId) &&
-        Objects.equals(this.closeConversionRateSettled, positionsPositionBase.closeConversionRateSettled) &&
-        Objects.equals(this.executionTimeOpen, positionsPositionBase.executionTimeOpen) &&
-        Objects.equals(this.isForceOpen, positionsPositionBase.isForceOpen) &&
-        Objects.equals(this.isMarketOpen, positionsPositionBase.isMarketOpen) &&
-        Objects.equals(this.lockedByBackOffice, positionsPositionBase.lockedByBackOffice) &&
-        Objects.equals(this.openPrice, positionsPositionBase.openPrice) &&
-        Objects.equals(this.spotDate, positionsPositionBase.spotDate) &&
-        Objects.equals(this.status, positionsPositionBase.status) &&
-        Objects.equals(this.uic, positionsPositionBase.uic) &&
-        Objects.equals(this.valueDate, positionsPositionBase.valueDate);
+    NetPositionsMePositionBase netPositionsMePositionBase = (NetPositionsMePositionBase) o;
+    return Objects.equals(this.accountId, netPositionsMePositionBase.accountId) &&
+        Objects.equals(this.accountKey, netPositionsMePositionBase.accountKey) &&
+        Objects.equals(this.amount, netPositionsMePositionBase.amount) &&
+        Objects.equals(this.assetType, netPositionsMePositionBase.assetType) &&
+        Objects.equals(this.canBeClosed, netPositionsMePositionBase.canBeClosed) &&
+        Objects.equals(this.clientId, netPositionsMePositionBase.clientId) &&
+        Objects.equals(this.closeConversionRateSettled, netPositionsMePositionBase.closeConversionRateSettled) &&
+        Objects.equals(this.correlationKey, netPositionsMePositionBase.correlationKey) &&
+        Objects.equals(this.executionTimeOpen, netPositionsMePositionBase.executionTimeOpen) &&
+        Objects.equals(this.isForceOpen, netPositionsMePositionBase.isForceOpen) &&
+        Objects.equals(this.isMarketOpen, netPositionsMePositionBase.isMarketOpen) &&
+        Objects.equals(this.lockedByBackOffice, netPositionsMePositionBase.lockedByBackOffice) &&
+        Objects.equals(this.openPrice, netPositionsMePositionBase.openPrice) &&
+        Objects.equals(this.openPriceIncludingCosts, netPositionsMePositionBase.openPriceIncludingCosts) &&
+        Objects.equals(this.sourceOrderId, netPositionsMePositionBase.sourceOrderId) &&
+        Objects.equals(this.status, netPositionsMePositionBase.status) &&
+        Objects.equals(this.uic, netPositionsMePositionBase.uic) &&
+        Objects.equals(this.valueDate, netPositionsMePositionBase.valueDate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(accountId, amount, assetType, canBeClosed, clientId, closeConversionRateSettled, executionTimeOpen, isForceOpen, isMarketOpen, lockedByBackOffice, openPrice, spotDate, status, uic, valueDate);
+    return Objects.hash(accountId, accountKey, amount, assetType, canBeClosed, clientId, closeConversionRateSettled, correlationKey, executionTimeOpen, isForceOpen, isMarketOpen, lockedByBackOffice, openPrice, openPriceIncludingCosts, sourceOrderId, status, uic, valueDate);
   }
 
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class PositionsPositionBase {\n");
+    sb.append("class NetPositionsMePositionBase {\n");
     
     sb.append("    accountId: ").append(toIndentedString(accountId)).append("\n");
+    sb.append("    accountKey: ").append(toIndentedString(accountKey)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
     sb.append("    assetType: ").append(toIndentedString(assetType)).append("\n");
     sb.append("    canBeClosed: ").append(toIndentedString(canBeClosed)).append("\n");
     sb.append("    clientId: ").append(toIndentedString(clientId)).append("\n");
     sb.append("    closeConversionRateSettled: ").append(toIndentedString(closeConversionRateSettled)).append("\n");
+    sb.append("    correlationKey: ").append(toIndentedString(correlationKey)).append("\n");
     sb.append("    executionTimeOpen: ").append(toIndentedString(executionTimeOpen)).append("\n");
     sb.append("    isForceOpen: ").append(toIndentedString(isForceOpen)).append("\n");
     sb.append("    isMarketOpen: ").append(toIndentedString(isMarketOpen)).append("\n");
     sb.append("    lockedByBackOffice: ").append(toIndentedString(lockedByBackOffice)).append("\n");
     sb.append("    openPrice: ").append(toIndentedString(openPrice)).append("\n");
-    sb.append("    spotDate: ").append(toIndentedString(spotDate)).append("\n");
+    sb.append("    openPriceIncludingCosts: ").append(toIndentedString(openPriceIncludingCosts)).append("\n");
+    sb.append("    sourceOrderId: ").append(toIndentedString(sourceOrderId)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
     sb.append("    uic: ").append(toIndentedString(uic)).append("\n");
     sb.append("    valueDate: ").append(toIndentedString(valueDate)).append("\n");

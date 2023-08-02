@@ -27,7 +27,7 @@ import java.io.IOException;
  * PositionsData
  */
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2023-07-27T21:00:40.494761882Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2023-08-01T18:24:56.181779897Z[GMT]")
 
 public class PositionsData {
   @SerializedName("NetPositionId")

@@ -2,7 +2,7 @@
 
 Saxobank trading API
 - API version: 0.1-oas3
-  - Build date: 2023-07-27T21:00:40.494761882Z[GMT]
+  - Build date: 2023-08-01T18:24:56.181779897Z[GMT]
 
 Saxobank trading API
 
@@ -107,6 +107,7 @@ Class | Method | HTTP request | Description
 *DefaultApi* | [**openapiPortV1BalancesGet**](docs/DefaultApi.md#openapiPortV1BalancesGet) | **GET** /openapi/port/v1/balances | 
 *DefaultApi* | [**openapiPortV1BalancesMeGet**](docs/DefaultApi.md#openapiPortV1BalancesMeGet) | **GET** /openapi/port/v1/balances/me | 
 *DefaultApi* | [**openapiPortV1ClientsMeGet**](docs/DefaultApi.md#openapiPortV1ClientsMeGet) | **GET** /openapi/port/v1/clients/me | 
+*DefaultApi* | [**openapiPortV1NetpositionsMeGet**](docs/DefaultApi.md#openapiPortV1NetpositionsMeGet) | **GET** /openapi/port/v1/netpositions/me | 
 *DefaultApi* | [**openapiPortV1OrdersMeGet**](docs/DefaultApi.md#openapiPortV1OrdersMeGet) | **GET** /openapi/port/v1/orders/me | 
 *DefaultApi* | [**openapiPortV1PositionsGet**](docs/DefaultApi.md#openapiPortV1PositionsGet) | **GET** /openapi/port/v1/positions | 
 *DefaultApi* | [**openapiPortV1UsersMeGet**](docs/DefaultApi.md#openapiPortV1UsersMeGet) | **GET** /openapi/port/v1/users/me | 
@@ -144,8 +145,13 @@ Class | Method | HTTP request | Description
  - [InstrumentsDetailsRelatedOptionRootsEnhanced](docs/InstrumentsDetailsRelatedOptionRootsEnhanced.md)
  - [InstrumentsDetailsTickSizeScheme](docs/InstrumentsDetailsTickSizeScheme.md)
  - [InstrumentsDetailsTickSizeSchemeElements](docs/InstrumentsDetailsTickSizeSchemeElements.md)
+ - [NetPositionsMe](docs/NetPositionsMe.md)
+ - [NetPositionsMeData](docs/NetPositionsMeData.md)
+ - [NetPositionsMeNetPositionBase](docs/NetPositionsMeNetPositionBase.md)
+ - [NetPositionsMeNetPositionView](docs/NetPositionsMeNetPositionView.md)
  - [Openapitradev2ordersOrderDuration](docs/Openapitradev2ordersOrderDuration.md)
  - [Openapitradev2ordersOrderDuration1](docs/Openapitradev2ordersOrderDuration1.md)
+ - [Openapitradev2ordersOrders](docs/Openapitradev2ordersOrders.md)
  - [OrderActivities](docs/OrderActivities.md)
  - [OrderActivitiesData](docs/OrderActivitiesData.md)
  - [OrderActivitiesDisplayAndFormat](docs/OrderActivitiesDisplayAndFormat.md)

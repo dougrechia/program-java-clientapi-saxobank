@@ -21,6 +21,7 @@ import io.swagger.client.model.InfoPrice;
 import io.swagger.client.model.InstrumentDetail;
 import io.swagger.client.model.Instruments;
 import io.swagger.client.model.InstrumentsDetails;
+import io.swagger.client.model.NetPositionsMe;
 import io.swagger.client.model.OrderActivities;
 import io.swagger.client.model.OrderCancel;
 import io.swagger.client.model.OrderPatchResponse;
@@ -130,6 +131,24 @@ public class DefaultApiTest {
     @Test
     public void openapiPortV1ClientsMeGetTest() throws Exception {
         ClientsMe response = api.openapiPortV1ClientsMeGet();
+
+        // TODO: test validations
+    }
+    /**
+     * 
+     *
+     * Get positions for the logged-in client
+     *
+     * @throws Exception
+     *          if the Api call fails
+     */
+    @Test
+    public void openapiPortV1NetpositionsMeGetTest() throws Exception {
+        Integer $skip = null;
+        Integer $top = null;
+        String fieldGroups = null;
+        String priceMode = null;
+        NetPositionsMe response = api.openapiPortV1NetpositionsMeGet($skip, $top, fieldGroups, priceMode);
 
         // TODO: test validations
     }

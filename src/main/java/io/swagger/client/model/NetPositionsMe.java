@@ -19,34 +19,66 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import io.swagger.client.model.NetPositionsMeData;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 /**
- * OrderResponse
+ * NetPositionsMe
  */
 
 @javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2023-08-01T18:24:56.181779897Z[GMT]")
 
-public class OrderResponse {
-  @SerializedName("OrderId")
-  private String orderId = null;
+public class NetPositionsMe {
+  @SerializedName("__count")
+  private Integer _count = null;
 
-  public OrderResponse orderId(String orderId) {
-    this.orderId = orderId;
+  @SerializedName("Data")
+  private List<NetPositionsMeData> data = null;
+
+  public NetPositionsMe _count(Integer _count) {
+    this._count = _count;
     return this;
   }
 
    /**
-   * Get orderId
-   * @return orderId
+   * Get _count
+   * @return _count
   **/
   @Schema(description = "")
-  public String getOrderId() {
-    return orderId;
+  public Integer getCount() {
+    return _count;
   }
 
-  public void setOrderId(String orderId) {
-    this.orderId = orderId;
+  public void setCount(Integer _count) {
+    this._count = _count;
+  }
+
+  public NetPositionsMe data(List<NetPositionsMeData> data) {
+    this.data = data;
+    return this;
+  }
+
+  public NetPositionsMe addDataItem(NetPositionsMeData dataItem) {
+    if (this.data == null) {
+      this.data = new ArrayList<NetPositionsMeData>();
+    }
+    this.data.add(dataItem);
+    return this;
+  }
+
+   /**
+   * Get data
+   * @return data
+  **/
+  @Schema(description = "")
+  public List<NetPositionsMeData> getData() {
+    return data;
+  }
+
+  public void setData(List<NetPositionsMeData> data) {
+    this.data = data;
   }
 
 
@@ -58,22 +90,24 @@ public class OrderResponse {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    OrderResponse orderResponse = (OrderResponse) o;
-    return Objects.equals(this.orderId, orderResponse.orderId);
+    NetPositionsMe netPositionsMe = (NetPositionsMe) o;
+    return Objects.equals(this._count, netPositionsMe._count) &&
+        Objects.equals(this.data, netPositionsMe.data);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(orderId);
+    return Objects.hash(_count, data);
   }
 
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class OrderResponse {\n");
+    sb.append("class NetPositionsMe {\n");
     
-    sb.append("    orderId: ").append(toIndentedString(orderId)).append("\n");
+    sb.append("    _count: ").append(toIndentedString(_count)).append("\n");
+    sb.append("    data: ").append(toIndentedString(data)).append("\n");
     sb.append("}");
     return sb.toString();
   }

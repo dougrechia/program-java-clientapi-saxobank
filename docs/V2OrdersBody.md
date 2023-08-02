@@ -15,3 +15,4 @@ Name | Type | Description | Notes
 **manualOrder** | **Boolean** |  |  [optional]
 **accountKey** | **String** |  |  [optional]
 **uic** | **Long** |  |  [optional]
+**orders** | [**List&lt;Openapitradev2ordersOrders&gt;**](Openapitradev2ordersOrders.md) |  |  [optional]
