@@ -12,8 +12,11 @@
 
 package io.swagger.client.api;
 
-import io.swagger.client.model.AuthData;
 import org.junit.Test;
+
+import saxobank.home.sdk.api.AuthClientApi;
+import saxobank.home.sdk.model.AuthData;
+
 import org.junit.Ignore;
 
 

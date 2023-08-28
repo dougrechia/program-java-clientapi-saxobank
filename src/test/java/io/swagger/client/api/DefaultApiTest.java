@@ -12,27 +12,31 @@
 
 package io.swagger.client.api;
 
-import io.swagger.client.model.AccountsMe;
-import io.swagger.client.model.Balances;
-import io.swagger.client.model.BalancesMe;
 import java.math.BigDecimal;
-import io.swagger.client.model.ClientsMe;
-import io.swagger.client.model.InfoPrice;
-import io.swagger.client.model.InstrumentDetail;
-import io.swagger.client.model.Instruments;
-import io.swagger.client.model.InstrumentsDetails;
-import io.swagger.client.model.NetPositionsMe;
-import io.swagger.client.model.OrderActivities;
-import io.swagger.client.model.OrderCancel;
-import io.swagger.client.model.OrderPatchResponse;
-import io.swagger.client.model.OrderQuery;
-import io.swagger.client.model.OrderResponse;
-import io.swagger.client.model.OrdersCancel;
-import io.swagger.client.model.Positions;
-import io.swagger.client.model.UsersMe;
-import io.swagger.client.model.V2OrdersBody;
-import io.swagger.client.model.V2OrdersBody1;
+
 import org.junit.Test;
+
+import saxobank.home.sdk.api.DefaultApi;
+import saxobank.home.sdk.model.AccountsMe;
+import saxobank.home.sdk.model.Balances;
+import saxobank.home.sdk.model.BalancesMe;
+import saxobank.home.sdk.model.ClientsMe;
+import saxobank.home.sdk.model.InfoPrice;
+import saxobank.home.sdk.model.InstrumentDetail;
+import saxobank.home.sdk.model.Instruments;
+import saxobank.home.sdk.model.InstrumentsDetails;
+import saxobank.home.sdk.model.NetPositionsMe;
+import saxobank.home.sdk.model.OrderActivities;
+import saxobank.home.sdk.model.OrderCancel;
+import saxobank.home.sdk.model.OrderPatchResponse;
+import saxobank.home.sdk.model.OrderQuery;
+import saxobank.home.sdk.model.OrderResponse;
+import saxobank.home.sdk.model.OrdersCancel;
+import saxobank.home.sdk.model.Positions;
+import saxobank.home.sdk.model.UsersMe;
+import saxobank.home.sdk.model.V2OrdersBody;
+import saxobank.home.sdk.model.V2OrdersBody1;
+
 import org.junit.Ignore;
 
 
